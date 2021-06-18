@@ -23,6 +23,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	z-index: 3;
+	overfolw:hidden;
+	height: 100vh;
 
 	/*background-image: url('../images/bg-pattern-top.svg');*/
 }
@@ -133,27 +135,26 @@ body {
 	letter-spacing: 1.8px;
 }
 
-.tp-pattern{
-    z-index: 2;
-    width: 100%;
-    position: relative;
-    background-position: left 30px top 45vh;
-    top: 15%;
-    right: 48%;
+ #tp-pattern {
+	z-index: 2;
+	width: 100%;
+	position: relative;
+	background-position: left 30px top 45vh;
+	top: 15%;
+	right: 48%;
 }
+ 
 
-
-.btm-pattern{
-    z-index: 2;
-    width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 35%;
-    right: -55%;
-}
-
+ #btm-pattern {
+	z-index:2;
+	width: 60vw;
+	height: 60vw;
+	position: relative;
+	right: -55%;
+	bottom: 35%;
+	overflow: hidden;
+} 
 
 .attribution {
 	align-self: flex-start;
 }
-
