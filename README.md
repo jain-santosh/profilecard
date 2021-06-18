@@ -1,2 +1,3 @@
 # profilecard
-Frontendmentor
+Frontendmentor.io
+Profile-card Challenge using HTML CSS
