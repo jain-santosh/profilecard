@@ -1,0 +1,159 @@
+:root {
+
+	--bg-clr: #1BA1AD;
+	--ft-sz: 18px;
+}
+
+.ft-gray {
+	color: hsl(0, 0%, 59%);
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	width: 100%;
+	background-color: var(--bg-clr);
+	height: 100%;
+	font-family: "Kumbh Sans",  sans-serif;
+	color: rgb(20, 20, 20);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 3;
+
+	/*background-image: url('../images/bg-pattern-top.svg');*/
+}
+
+.card {
+	margin: 0 auto;
+	height: 390px;
+	width: 345px;
+
+	background-color: white;
+	border-radius: 12px;
+
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	flex-basis: 1;
+	z-index: 5;
+}
+
+.card__bg {
+	height: 20.9vh;
+}
+
+.card__bg img {
+	width: 100%;
+	object-fit: cover;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.pic__frame {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+	width: 33%;
+	padding: 1px;
+	margin-bottom: 10px;
+	align-self: center;
+	position: relative;
+	top: -60px;
+}
+.card__pic {
+	border-radius: 50%;
+	border-width: 10px;
+	border-color: red;
+	width: 100%;
+	z-index: 2;
+	transform: scale(0.93);
+}
+
+.card__main-info {
+	background-color: transparent;
+	margin: 0 auto;
+
+	position: relative;
+	bottom: 40px;
+
+	z-index: 1;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 3;
+}
+
+.card__main-info p {
+	margin: 0px;
+	font-size: 1.1rem;
+}
+
+.card__main-info p:nth-child(3){
+	font-size: 0.9rem;
+	flex: 2;
+}
+
+.card__sec-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-top: 1px solid rgb(20, 20, 20, 0.1);
+	flex: 4 1 10%;
+	position: relative;
+	bottom: 25px;
+}
+
+.card__sec-info h3 {
+	align-self: center;
+	margin: 30px 0 0;
+	font-size: 1.1rem;
+}
+
+.card__sec-info p {
+	color: hsl(0, 0%, 59%);
+	font-size: 0.6rem;
+}
+
+.followers, .likes, .photos {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+}
+
+.followers p, .likes p, .photos p {
+	letter-spacing: 1.8px;
+}
+
+.tp-pattern{
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    background-position: left 30px top 45vh;
+    top: 15%;
+    right: 48%;
+}
+
+
+.btm-pattern{
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 35%;
+    right: -55%;
+}
+
+
+.attribution {
+	align-self: flex-start;
+}
+
